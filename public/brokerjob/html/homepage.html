@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid" style="padding: 0">
+      <!-- NAVBAR HEADER -->
+      <div class="container">
+        <div class="row justify-content-between p-2">
+          <ul class="nav justify-content-start align-items-center">
+            <img class="navbar-brand" src="../assets/image/logo.jpg" alt="" />
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                href="#"
+                >Việc làm</a
+              >
+              <div class="dropdown-menu">
+                <table class="dropdown-item" id="menu-listjob">
+                  <tr>
+                    <th>Việc làm theo chuyên ngành ngành</th>
+                    <th>Việc làm theo địa điểm</th>
+                    <th>Việc làm theo nhu cầu</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Công ty</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Công ty tiêu biểu</a>
+                <a class="dropdown-item" href="#">Tất cả công ty</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >CV / Hồ sơ</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tạo CV</a>
+                <a class="dropdown-item" href="#">Check CV</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >Phát triển sự nghiệp</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tra cứu</a>
+                <a class="dropdown-item" href="#">Kiến thức</a>
+                <a class="dropdown-item" href="#">Tra cứu lương</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end align-items-center">
+            <li class="nav-item d-flex divide dropdown">
+              <!-- <img
+                class="navbar-brand"
+                src="../assets/image/logo.jpg"
+                alt=""
+                style="
+                  width: 15%;
+                  height: 30px;
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 6px;
+                "
+              />
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >Thắng Nguyễn</a
+              > -->
+              <a href="" class="btn  btn-outline-primary mr-2">Đăng ký</a>
+              <a href="" class="btn btn-primary">Đăng nhập</a>
+              <div class="dropdown-menu">
+                <div style="border-bottom: 1px solid #e7e9eb">
+                  <a class="dropdown-item" href="#">Cập nhập hồ sơ</a>
+                  <a class="dropdown-item" href="#">Giới thiệu bản thân</a>
+                  <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                </div>
+                <div style="border-bottom: 1px solid #e7e9eb">
+                  <a class="dropdown-item" href="#">Việc làm đã ứng tuyển</a>
+                  <a class="dropdown-item" href="#">Việc làm đã lưu</a>
+                </div>
+                <div>
+                  <a class="dropdown-item" href="#">Đăng xuất</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link recruiter text-dark" href="#"
+                >Nhà tuyển dụng</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- NAVBAR HEADER -->
+
+      <!-- SEO -->
+      <div class="container">
+        <div class="search-job">
+          <h2 style="margin-top: 20px; margin-bottom: 20px">
+            BrokerJob - Tìm việc làm
+          </h2>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="input-group-text" id="">Tìm kiếm</button>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Việc làm, công ty, nghề nghiệp..."
+            />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Tỉnh thành, quận..."
+            />
+          </div>
+        </div>
+
+        <ul
+          class="col-11 list-group list-group-horizontal d-flex justify-content-center"
+          style="margin: 40px auto; text-align: center"
+        >
+          <button
+            type="button"
+            class="list-group-item list-group-item-action align-items-center"
+          >
+            Việc tại Đà Nẵng
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action align-items-center"
+          >
+            Công nghệ thông tin
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action align-items-center"
+          >
+            Kỹ thuật
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action align-items-center"
+          >
+            Kỹ thuật mạng
+          </button>
+          <button
+            type="button"
+            class="list-group-item list-group-item-action align-items-center"
+          >
+            Lập Trình
+          </button>
+        </ul>
+
+        <div
+          class="row d-flex justify-content"
+          style="margin: 50px auto; width: 80%"
+        >
+          <div
+            class="card-border col-5 d-flex"
+            style="padding: 0; padding: 10px 0"
+          >
+            <div class="col-8">
+              <h6>Phân tích CV - BrokerAI</h6>
+              <p>Bạn đã có sẵn CV? Tải lên để nhận phân tích CV.</p>
+              <button class="btn btn-primary" type="button">
+                <i class="fa-solid fa-file-arrow-up"></i>
+                Tải lên CV
+              </button>
+            </div>
+            <div class="col-4">
+              <img
+                src="./assets/image/robot-computer.webp"
+                alt=""
+                style="height: 70%; width: 100%; margin-top: 20px"
+              />
+            </div>
+          </div>
+          <div
+            class="card-border col-5 d-flex"
+            style="padding: 0; padding: 10px 0"
+          >
+            <div class="col-8">
+              <h6>Tạo CV ấn tượng</h6>
+              <p>Tạo CV online xin việc chuẩn, đẹp miễn phí.</p>
+              <button class="btn btn-primary" type="button">
+                <i class="fa-sharp fa-regular fa-plus"></i>
+                Tạo CV ngay!
+              </button>
+            </div>
+            <div class="col-4">
+              <img
+                src="./assets/image/CV.png"
+                alt=""
+                style="height: 70%; width: 100%; margin-top: 20px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SEO -->
+      <!-- Urgent Hiring -->
+      <div class="container-fluid" style="background-color: #f8f9fa">
+        <div class="container">
+          <h3 style="padding-top: 20px">Việc tuyển gấp</h3>
+          <div class="row justify-content-between">
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+            <div class="urgentHiring col d-flex" style="padding: 0">
+              <div class="col-3">
+                <img
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                  style="width: 120%; height: 80%; margin: 10px auto"
+                />
+              </div>
+              <div class="col-9" style="margin: 8px auto">
+                <h6>Account Manage</h6>
+                <p style="font-size: 14px">Công ty TNHH Kim Thắng</p>
+                <ul class="d-flex justify-content-between">
+                  <li><i class="fa-solid fa-location-dot"></i>Hà Nội</li>
+                  <li><i class="fa-regular fa-clock"></i>26/12/1111</li>
+                  <li><i class="fa-solid fa-sack-dollar"></i>salary</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Typical Employers -->
+    </div>
+    <div class="container">
+      <div #swiperRef="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="col" style="padding: 0 10px">
+              <div class="card" style="width: 100%">
+                <img
+                  class="card-img-top img-thumbnail"
+                  src="./assets/image/logo.jpg"
+                  alt=""
+                />
+                <div class="card-body" style="text-align: start">
+                  <h6 class="card-title">
+                    Công Ty TNHH Bảo Hiểm Nhân Thọ Prudential Việt Nam
+                  </h6>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Hà Nội
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        centeredSlides: false,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Typical Employers -->
+
+    <!-- footer -->
+    <footer class="footer bg-white pt-4 pt-sm-5 pb-3" >
+      <div class="no-padding" style="background-color: #f8f9fa">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="footer-widget">
+                <h3 class="widgettitle widget-title text-dark fw-bold">
+                  Ứng dụng môi giới việc làm Broker Job
+                </h3>
+                <div class="textwidget">
+                  <p>
+                    <strong class="text-body">Văn phòng Miền Bắc:</strong> Tầng
+                    3 tòa G1 <br />
+                    Five Star Garden, Thanh Xuân, Hà Nội <br />Điện thoại:
+                    <a
+                      class="text-primary"
+                      title="JobsGO Miền Bắc"
+                      href="tel:0898579188"
+                      >0898.579.188</a
+                    >
+                  </p>
+                  <p>
+                    <strong class="text-body">Văn phòng Miền Nam:</strong> Lầu
+                    5, 607-609 Nguyễn Kiệm,<br />
+                    Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh <br />Điện thoại:
+                    <a
+                      class="text-primary"
+                      title="JobsGO Miền Nam"
+                      href="tel:0896557388"
+                      >0896.557.388</a
+                    >
+                  </p>
+                  <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:contact@jobsgo.vn">contact@jobsgo.vn</a
+                    ><br /><strong title="Chăm sóc ứng viên"
+                      >Hỗ trợ ứng viên:</strong
+                    >
+                    <a
+                      title="Chăm sóc ứng viên"
+                      class="text-primary"
+                      href="tel:0705052927"
+                      >070.505.2927</a
+                    ><br />
+                    <strong>Hotline:</strong>
+                    <a
+                      title="Hotline"
+                      class="text-primary"
+                      href="tel:0899.565.868"
+                      >0899.565.868</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6 col-xs-6 col-md-2">
+              <div class="footer-widget">
+                <h3
+                  class="widgettitle widget-title text-dark fw-bold"
+                  title="Việc làm theo địa điểm"
+                >
+                  Việc theo địa điểm
+                </h3>
+                <div class="textwidget">
+                  <div class="textwidget">
+                    <ul class="footer-navigation list-unstyled">
+                      <li>
+                        <a
+                          href="/viec-lam-tai-ha-noi.html"
+                          title="Việc làm tại Hà Nội"
+                          >Hà Nội</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-ho-chi-minh.html"
+                          title="Việc làm tại Hồ Chí Minh"
+                          >Hồ Chí Minh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-da-nang.html"
+                          title="Việc làm tại Đà Nẵng"
+                          >Đà Nẵng</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-quang-ninh.html"
+                          title="Việc làm tại Quảng Ninh"
+                          >Quảng Ninh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-hai-phong.html"
+                          title="Việc làm tại Hải Phòng"
+                          >Hải Phòng</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-bac-ninh.html"
+                          title="Việc làm tại Bắc Ninh"
+                          >Bắc Ninh</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-can-tho.html"
+                          title="Việc làm tại Cần Thơ"
+                          >Cần Thơ</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="/viec-lam-tai-binh-duong.html"
+                          title="Việc làm tại Bình Dương"
+                          >Bình Dương</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3 col-6 col-xs-6 col-md-2">
+              <div class="footer-widget">
+                <h3
+                  class="widgettitle widget-title text-dark fw-bold"
+                  title="Việc làm theo ngành nghề"
+                >
+                  Việc theo ngành nghề
+                </h3>
+                <div class="textwidget">
+                  <ul class="footer-navigation list-unstyled">
+                    <li>
+                      <a
+                        href="/viec-lam-cong-nghe-thong-tin.html"
+                        title="Việc làm Công nghệ thông tin"
+                        >Công Nghệ Thông Tin</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-kinh-doanh-ban-hang.html"
+                        title="Việc làm Kinh doanh/Bán hàng"
+                        >Kinh Doanh/Bán Hàng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-hanh-chinh-van-phong.html"
+                        title="Việc làm Hành chính/Văn phòng"
+                        >Hành Chính/Văn Phòng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-quang-cao-marketing.html"
+                        title="Việc làm Quảng cáo/Marketing/PR"
+                        >Quảng Cáo/Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-ke-toan-kiem-toan.html"
+                        title="Việc làm Kế Toán/Kiểm Toán"
+                        >Kế Toán/Kiểm Toán</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-tai-chinh-ngan-hang.html"
+                        title="Việc làm Tài Chính/Ngân Hàng"
+                        >Tài Chính/Ngân Hàng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-kho-van.html"
+                        title="Việc làm Vận Tải/Giao Nhận/Kho Vận"
+                        >Vận Tải/Kho Vận</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/nganh-nghe.html" title="Xem tất cả ngành nghề"
+                        >Xem tất cả <b>»</b></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6 col-xs-6 col-md-2">
+              <div class="footer-widget">
+                <h3
+                  class="widgettitle widget-title text-dark fw-bold"
+                  title="Việc làm theo Vị trí/Chức vụ"
+                >
+                  Việc theo chức vụ
+                </h3>
+                <div class="textwidget">
+                  <ul class="footer-navigation list-unstyled">
+                    <li>
+                      <a
+                        href="/viec-lam-thuc-tap-sinh.html"
+                        title="Việc làm Thực Tập Sinh"
+                        >Thực Tập Sinh</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/viec-lam-thu-kho.html" title="Việc làm Thủ Kho"
+                        >Thủ Kho</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/viec-lam-tai-xe.html" title="Việc làm Tài Xế"
+                        >Tài Xế</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-tro-ly.html"
+                        title="Việc làm Trợ lý/Hỗ trợ"
+                        >Trợ lý/Hỗ trợ</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-nhan-vien.html"
+                        title="Việc làm Nhân viên/Chuyên viên"
+                        >Nhân viên</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-truong-phong.html"
+                        title="Việc làm Trưởng Nhóm/Trưởng Phòng"
+                        >Trưởng Phòng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-giam-doc.html"
+                        title="Việc làm Giám đốc/Cấp cao hơn"
+                        >Giám đốc</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/vi-tri-chuc-vu.html"
+                        title="Xem tất cả vị trí/chức vụ"
+                        >Xem tất cả <b>»</b></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6 col-xs-6 col-md-2">
+              <div class="footer-widget">
+                <h3
+                  class="widgettitle widget-title text-dark fw-bold"
+                  title="Việc làm theo loại hình"
+                >
+                  Việc theo loại hình
+                </h3>
+                <div class="textwidget">
+                  <ul class="footer-navigation list-unstyled">
+                    <li>
+                      <a
+                        href="/viec-lam-full-time.html"
+                        title="Việc làm Full-time"
+                        >Full-time</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/viec-lam-part-time.html"
+                        title="Việc làm Part-time"
+                        >Part-time</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/viec-lam-thoi-vu.html" title="Việc làm Thời vụ"
+                        >Thời vụ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/viec-lam-remote.html" title="Việc làm Remote"
+                        >Remote</a
+                      >
+                    </li>
+                  </ul>
+                  <ul
+                    class="footer-social visible-xs d-block d-sm-none list-inline mb-1"
+                  >
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.facebook.com/JobsGOVN/"
+                        target="_blank"
+                        ><i class="bx bx-xs bxl-facebook"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.linkedin.com/company/josbgo.vn/"
+                        target="_blank"
+                        ><i class="bx bx-xs bxl-linkedin"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a
+                        href="https://www.instagram.com/jobsgo_vn/"
+                        target="_blank"
+                        ><i class="bx bx-xs bxl-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright" style="background-color: #f8f9fa">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-10">
+              <ul class="list-inline list-unstyled mb-1 text-primary">
+                <li class="list-inline-item">
+                  <a href="https://jobsgo.vn/site/about-us" title="Về chúng tôi"
+                    ><u>Giới thiệu</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/pdf/viewer/?file=/media/pdf/quy_che.pdf"
+                    title="Quy chế hoạt động"
+                    ><u>Quy chế hoạt động</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/site/giai-quyet-tranh-chap"
+                    title="Giải quyết tranh chấp"
+                    ><u>Giải quyết tranh chấp</u></a
+                  >
+                </li>
+                <!--<li><a href="https://jobsgo.vn/site/term-of-service" title="Điều khoản sử dụng">Điều khoản</a></li>-->
+                <li class="list-inline-item">
+                  <a
+                    href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fjobsgo.vn%2Fjobsgo_thoa_thuan_mang_xa_hoi.doc&amp;wdOrigin=BROWSELINK"
+                    target="_blank"
+                    ><u>Thoả thuận sử dụng</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/site/privacy-policy"
+                    title="Chính sách bảo mật"
+                    ><u>Bảo mật</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    target="_blank"
+                    href="https://employer.jobsgo.vn"
+                    title="JobsGO dành cho Nhà tuyển dụng tìm kiếm nhân sự"
+                    ><u>Dành cho Nhà Tuyển Dụng</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/site/faq"
+                    title="Câu hỏi thường gặp"
+                    ><u>FAQ</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/blog"
+                    target="_blank"
+                    title="Tin tức"
+                    ><u>Blog</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/hoi-dap/cau-hoi"
+                    target="_blank"
+                    title="Hỏi &amp; Đáp"
+                    ><u>Hỏi &amp; Đáp</u></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://jobsgo.vn/sitemap.html"
+                    title="Sơ đồ trang web"
+                    ><u>Sitemap</u></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-2">
+              <ul
+                class="footer-social text-center hidden-xs d-none d-sm-block list-inline mb-1"
+              >
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/JobsGOVN/" target="_blank"
+                    ><i class="bx bx-xs bxl-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/company/josbgo.vn/"
+                    target="_blank"
+                    ><i class="bx bx-xs bxl-linkedin"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/jobsgo_vn/" target="_blank"
+                    ><i class="bx bx-xs bxl-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10">
+              <p class="pull-left small text-body">
+                Số ĐKKD:‎‎ 0108266100, cấp ngày 09/05/2018 do Sở Kế hoạch và Đầu
+                tư Thành phố Hà Nội cấp. <br />Giấy phép thiết lập Mạng xã hội
+                trên mạng số 568/GP-BTTTT do Bộ Thông tin &amp; Truyền thông cấp
+                ngày 30/08/2021.<br />
+                © 2023 Công ty Cổ phần JobsGO. All Rights Reserved.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

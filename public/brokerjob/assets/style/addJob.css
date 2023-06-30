@@ -1,0 +1,17 @@
+.table input {
+    width: 90%;
+    padding: 10px 0;
+  }
+  
+  .margin {
+    margin: 10px 0;
+  }
+  
+  label {
+    font-weight: 500;
+  }
+  
+  .addjob button {
+    float: right;
+    margin: 20px;
+  }

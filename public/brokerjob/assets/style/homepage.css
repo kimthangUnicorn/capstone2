@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/* NAVBAR HEADER */
+.navbar-brand {
+  height: 60px;
+  width: auto;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.divide {
+  border-right: 2px solid #e7e9eb;
+}
+
+#menu-listjob {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 300%;
+}
+#menu-listjob td,
+#menu-listjob th {
+  padding: 8px;
+}
+
+.recruiter {
+  background-color: #f4f6f7;
+  border-radius: 5px;
+}
+/* NAVBAR HEADER */
+
+/* SEO */
+.search-job {
+  display: block;
+  text-align: center;
+}
+.card-border {
+  margin: 0 10px;
+  height: 154px;
+  border: 1px solid #1772bd;
+  border-radius: 5px;
+}
+/* SEO */
+
+/*  Urgent Hiring */
+.job_urgent {
+  width: 85%;
+  margin: 0 auto;
+}
+.urgentHiring {
+  border: 2px solid #e7e9eb;
+  margin: 10px 5px;
+  height: 110px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.urgentHiring .urgent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.urgent p {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.urgent ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.urgent ul li {
+  width: initial;
+  font-size: 9.5px;
+  padding: 2px 4px;
+  float: left;
+  border: 1px solid #ddd !important;
+  margin: 3px 3px 3px 0;
+  border-radius: 5px !important;
+}
+.urgent ul li:nth-child(odd) {
+  width: 35%;
+}
+.urgentHiring h5 {
+  font-size: 13px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.urgent ul li .fa {
+  position: relative;
+  top: 1px;
+}
+*/
+/*  Urgent Hiring */
+/*   <!-- Typical Employers --> */
+
+.swiper-button-next {
+  position: absolute;
+  right: 0%;
+}
+/*   <!-- Typical Employers --> */
+
+/* chooseCV */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pic_over:hover .image {
+  opacity: 0.3;
+}
+
+.pic_over:hover .middle {
+  opacity: 1;
+}
+
+/* chooseCV */
+
+.job_cv {
+  width: 85%;
+  margin: 0 auto;
+}
+.allcv {
+  border: 2px solid #e7e9eb;
+  margin: 10px 5px;
+  height: 110px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.allcv .cv {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+.cv p {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cv ul {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.cv ul li {
+  width: initial;
+  font-size: 9.5px;
+  padding: 2px 4px;
+  float: left;
+  border: 1px solid #ddd !important;
+  margin: 3px 3px 3px 0;
+  border-radius: 5px !important;
+}
+.cv ul li:nth-child(odd) {
+  width: 35%;
+}
+.allcv h5 {
+  font-size: 13px;
+  color: #dc3545;
+  font-weight: 700;
+}
+.cv ul li .fa {
+  position: relative;
+  top: 1px;
+}

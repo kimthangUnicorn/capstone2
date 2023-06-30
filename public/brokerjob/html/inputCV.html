@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/homepage.css" />
+    <link rel="stylesheet" href="../assets/style/inputCV.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+ 
+    <div class="container-fluid" style="padding: 0">
+      <!-- NAVBAR HEADER -->
+      <div class="container">
+        <div class="row justify-content-between p-2">
+          <ul class="nav justify-content-start align-items-center">
+            <img class="navbar-brand" src="../assets/image/logo.jpg" alt="" />
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                href="#"
+                >Việc làm</a
+              >
+              <div class="dropdown-menu">
+                <table class="dropdown-item" id="menu-listjob">
+                  <tr>
+                    <th>Việc làm theo chuyên ngành ngành</th>
+                    <th>Việc làm theo địa điểm</th>
+                    <th>Việc làm theo nhu cầu</th>
+                  </tr>
+                  <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Công ty</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Công ty tiêu biểu</a>
+                <a class="dropdown-item" href="#">Tất cả công ty</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >CV / Hồ sơ</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tạo CV</a>
+                <a class="dropdown-item" href="#">Check CV</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >Phát triển sự nghiệp</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tra cứu</a>
+                <a class="dropdown-item" href="#">Kiến thức</a>
+                <a class="dropdown-item" href="#">Tra cứu lương</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="nav justify-content-end align-items-center">
+            <li class="nav-item d-flex divide dropdown">
+              <img
+                class="navbar-brand"
+                src="../assets/image/logo.jpg"
+                alt=""
+                style="
+                  width: 15%;
+                  height: 30px;
+                  padding: 0;
+                  margin: 0;
+                  margin-top: 6px;
+                "
+              />
+              <a
+                class="nav-link dropdown-toggle text-dark"
+                data-toggle="dropdown"
+                href="#"
+                >Thắng Nguyễn</a
+              >
+              <!-- <a href="" class="btn btn-outline-primary mr-2">Đăng ký</a>
+              <a href="" class="btn btn-primary">Đăng nhập</a> -->
+              <div class="dropdown-menu">
+                <div style="border-bottom: 1px solid #e7e9eb">
+                  <a class="dropdown-item" href="#">Cập nhập hồ sơ</a>
+                  <a class="dropdown-item" href="#">Giới thiệu bản thân</a>
+                  <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                </div>
+                <div style="border-bottom: 1px solid #e7e9eb">
+                  <a class="dropdown-item" href="#">Việc làm đã ứng tuyển</a>
+                  <a class="dropdown-item" href="#">Việc làm đã lưu</a>
+                </div>
+                <div>
+                  <a class="dropdown-item" href="#">Đăng xuất</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item ml-3">
+              <a class="nav-link recruiter text-dark" href="#"
+                >Nhà tuyển dụng</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-fluid d-flex" style="padding: 0">
+        <!-- <div class="col-2">
+          <div>
+            <h5><i class="fa-solid fa-circle-exclamation"></i>Hướng dẫn</h5>
+            <p>Điền đầy đủ các thông tin hiển thị trong CV</p>
+          </div>
+        </div> -->
+        <div class="col-10" style="margin: 0 auto">
+          <div class="row">
+            <div class="col-3" style="background-color: #434e5e; padding: 0">
+              <img
+                src="../assets/image/logo.jpg"
+                alt=""
+                style="width: 250px; height: 250px"
+              />
+            </div>
+            <div
+              class="col-9"
+              style="
+                padding: 0;
+                background-color: #434e5e;
+                margin-left: -4%;
+                color: #fff;
+              "
+            >
+              <div class="d-flex inputcv">
+                <div class="col-8 d-flex flex-column" style="padding: 0">
+                  <div style="font-size: 10px; color: #fff">
+                    <h3>THANG NGUYEN</h3>
+                    <div style="width: 30%">
+                      <div class="mt-3">
+                        <input
+                          style="width: 100%; height: 30px; padding: 5px"
+                          type="text"
+                          placeholder="Vị trí mong muốn"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <i class="fa-regular fa-envelope"> </i>
+                        <input
+                          style="width: 90%"
+                          type="text"
+                          placeholder="email@gmail.com"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <input
+                          style="width: 90%"
+                          type="text"
+                          placeholder="Số điện thoại"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <input
+                          style="width: 90%"
+                          type="text"
+                          placeholder="Ngày sinh"
+                        />
+                      </div>
+                      <div class="mt-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input
+                          style="width: 90%"
+                          type="text"
+                          placeholder="Địa chỉ"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 d-flex flex-column">
+                  <div class="pt-4">
+                    <i
+                      style="font-size: 22px; margin-right: 5px"
+                      class="fa-brands fa-linkedin"
+                    ></i
+                    ><input
+                      style="width: 90%"
+                      type="text"
+                      placeholder="linkedin.com/..."
+                    />
+                  </div>
+                  <div class="pt-4">
+                    <i
+                      style="font-size: 22px; margin-right: 4px"
+                      class="fa-brands fa-facebook"
+                    ></i
+                    ><input
+                      style="width: 90%"
+                      type="text"
+                      placeholder="linkedin.com/..."
+                    />
+                  </div>
+                  <div class="pt-4">
+                    <i
+                      style="font-size: 22px; margin-right: 5px"
+                      class="fa-brands fa-skype"
+                    ></i
+                    ><input
+                      style="width: 90%"
+                      type="text"
+                      placeholder="linkedin.com/..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding: 50px 0">
+            <div class="col-8">
+              <section class="experience">
+                <h3>
+                  <i class="fa-solid fa-briefcase"></i> Kinh nghiệm làm việc
+                </h3>
+                <div class="experienceForm">
+                  <div>
+                    <h5>Nhiệm vụ:</h5>
+                    <textarea
+                     placeholder="alo"
+                      
+                    ></textarea>
+                  </div>
+                  <div>
+                    <h5>Thành tích:</h5>
+                    <textarea
+                      id="experienceInput"
+                      name="experienceInput"
+                     
+                    ></textarea>
+                  </div>
+                </div>
+                <!-- <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div> -->
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Học vấn</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Hoạt động</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-medal"></i> Giải thưởng</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="col-3">
+              <section class="experience">
+                <h3><i class="fa-solid fa-laptop-code"></i> Kĩ năng</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-feather"></i> Kĩ năng mềm</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-certificate"></i> Chứng chỉ</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+              <section class="experience">
+                <h3><i class="fa-solid fa-language"></i> Ngoại ngữ</h3>
+                <div class="content_form">
+                  <div>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
